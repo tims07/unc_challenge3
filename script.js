@@ -1,10 +1,10 @@
-var  passwordCharacters = {
-  alphaLowerCase:"abcdefghijklmnopqrstuvwxyx",
-  alphaUpperCase: "ABCDEFGHIJLMNOPQRSTUVWXYX",
-  specialCharacters:  "!#$%&()*+,-./:;<=>?@[]^_`{|}~"
+// Object: Characters
+let passwordCharacters = {
+  uppercase: 'ABCDEFGHIJLMNOPQRSTUVWXYZ',
+  lowerCaseCharacters: 'abcdefghijklmnopqrstuvwxyx',
+  specialCharacters: '!#$%&()*+,-./:;<=>?@[]^_`{|}~',
+  numbers: '123456789'
 }
-
-
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -19,11 +19,20 @@ function generatePassword () {
   // Prompt criteria for user password
   // - password length
   // - special characters, case, and numbers
-  // - Probably store everything into an object
+  // - Probably store everything into an object or array
+
+  
+  let pWordCharacters = "";
+
+  for (i = 0; index < passwordCharacters.length; i++) {
+    let randomNum = Math.floor(Math.random()) * passwordCharacters.length;
+   
+    
+  }
+
 }
 
-
-
+generatePassword()
 
 
 
